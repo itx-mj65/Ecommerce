@@ -113,6 +113,7 @@ const NewArrivals = () => {
     },[])
     const handleMouseDown = (e) => {
         setisDragging(true);
+        
         setstartX(e.pageX - scrollref.current.offsetLeft);
         setscrollLeft(scrollref.current.scrollLeft);
     };
