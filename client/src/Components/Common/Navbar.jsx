@@ -22,7 +22,7 @@ const Navbar = () => {
                     <Link to='/' className='text-2xl font-medium ' >Logo</Link>
                 </div>
                 <div className='hidden md:flex  space-x-6 '>
-                    <Link to='#' className='text-gray-700 font-medium hover:text-black text-sm uppercase' >Mens</Link>
+                    <Link to='/collections/all' className='text-gray-700 font-medium hover:text-black text-sm uppercase' >Mens</Link>
                     <Link to='#' className='text-gray-700 font-medium hover:text-black text-sm uppercase' >Womens</Link>
                     <Link to='#' className='text-gray-700 font-medium hover:text-black text-sm uppercase' >Top Wears</Link>
                     <Link to='#' className='text-gray-700 font-medium hover:text-black text-sm uppercase' >Bottom Wears</Link>
@@ -52,7 +52,7 @@ const Navbar = () => {
                 <div className='p-4'>
                     <h2 className='text-xl font-semibold mb-4'>Menu</h2>
                     <nav className='space-y-4'>
-                        <Link to="#" onClick={togglenavdrawer} className='block text-gray-600 hover:text-black' >Mens</Link>
+                        <Link to="/collections" onClick={togglenavdrawer} className='block text-gray-600 hover:text-black' >Mens</Link>
                         <Link to="#" onClick={togglenavdrawer} className='block text-gray-600 hover:text-black' >Womens</Link>
                         <Link to="#" onClick={togglenavdrawer} className='block text-gray-600 hover:text-black' >Top Wear</Link>
                         <Link to="#" onClick={togglenavdrawer} className='block text-gray-600 hover:text-black' >Mens</Link>

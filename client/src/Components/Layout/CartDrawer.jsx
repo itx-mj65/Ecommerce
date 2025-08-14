@@ -1,9 +1,14 @@
 import React, { useState } from 'react'
 import { IoMdClose } from 'react-icons/io'
 import Cartcontent from '../Cart/Cartcontent'
+import { useNavigate } from 'react-router'
 
 const CartDrawer = ({ carttoggle, togglecart }) => {
-
+    const navigate = useNavigate()
+    const handleCheckout = () => {
+        togglecart()
+        navigate('/checkout')
+    }
 
 
 
@@ -27,7 +32,7 @@ const CartDrawer = ({ carttoggle, togglecart }) => {
 
             {/* checkout button  */}
             <div className='p-4 sticky bottom-0'>
-                <button className='w-full bg-black text-white py-3 hover:bg-gray-800 transition rounded-lg cursor-pointer' >Checkout</button>
+                <button onClick={handleCheckout} className='w-full bg-black text-white py-3 hover:bg-gray-800 transition rounded-lg cursor-pointer' >Checkout</button>
                 <p className='text-sm tracking-tighter text-gray-500 mt-2 text-center'>Shipping taxes and discount codes are calculated at checkout</p>
             </div>
 
